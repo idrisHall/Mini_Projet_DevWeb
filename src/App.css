@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: purple;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.app-header h1 {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.app-header p {
+    color: #000;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.section-description {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.objective-selector,
+.weight-inputs,
+.protein-table-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.objectives-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.objective-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.objective-card:hover {
+    background-color: #f0f0f0;
+}
+
+.objective-card.selected {
+    border-color: #4a7bdb;
+    background-color: #eef3ff;
+}
+
+.objective-card input[type="checkbox"] {
+    display: none;
+}
+
+.objective-name {
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.objective-range {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.inputs-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.input-group input[type="number"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    width: 150px;
+}
+
+.input-group input[type="number"]:focus {
+    outline: none;
+    border-color: #4a7bdb;
+}
+
+.validation-errors {
+    margin-top: 10px;
+    color: #c0392b;
+    font-size: 0.85rem;
+}
+
+.error-message {
+    margin: 2px 0;
+}
+
+.table-placeholder {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    background: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.protein-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.protein-table th,
+.protein-table td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.protein-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.protein-table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.weight-cell {
+    font-weight: bold;
+}
